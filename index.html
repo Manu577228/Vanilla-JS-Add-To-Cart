@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add to cart project</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Bharadwaj store</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li class="cart-icon">
+            <a href="#"
+              ><span class="cart-count">0</span>
+              <i class="fas fa-shopping-cart"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="products">
+        <h2>Featured products</h2>
+        <div class="product-grid"></div>
+      </section>
+
+      <section class="cart-summary" id="cartSummary">
+        <h2>Cart Summary</h2>
+        <div class="cart-items"></div>
+        <p class="cart-total">"Total: ₹<span id="totalPrice">0.00</span></p>
+        <button id="checkoutButton">Checkout</button>
+      </section>
+    </main>
+  </body>
+  <script
+    src="https://kit.fontawesome.com/d8b475a339.js"
+    crossorigin="anonymous"
+  ></script>
+  <script src="index.js"></script>
+</html>
